@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mood Music Suggestor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎵 Mood-Based Music Suggestor</h1>
+
+  <!-- Mood Selection Dropdown -->
+  <label for="mood">Select your mood:</label>
+  <select id="mood">
+    <option value="">--Choose--</option>
+    <option value="happy">😊 Happy</option>
+    <option value="sad">😞 Sad</option>
+    <option value="angry">😤 Angry</option>
+    <option value="calm">🌿 Calm</option>
+    <option value="other">🎧 Other</option>
+  </select>
+
+  <!-- Custom Mood Input -->
+  <div id="customMoodContainer" style="display: none; margin-top: 20px;">
+    <input type="text" id="customMood" placeholder="Type your mood here (e.g. party, heartbreak)">
+    <button onclick="searchMood()">Search on YouTube</button>
+  </div>
+
+  <!-- Music Suggestion Cards -->
+  <div id="suggestions"></div>
+
+  
+  <script src="javascriptfile.js"></script>
+</body>
+</html>
